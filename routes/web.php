@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/generation1Dex', 'DexController@genOne');
+
+Route::get('/generation1Dex/pokemon', 'DexController@pokemon');
