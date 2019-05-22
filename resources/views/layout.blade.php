@@ -14,7 +14,7 @@
             }
         }
         body{
-            background-color: grey;
+            background-color: #a0a0a0;
             text-align: center;
         }
         p{

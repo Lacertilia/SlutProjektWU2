@@ -1,12 +1,19 @@
 @extends('layout')
 
-@section('title', 'Generation 1')
+@section('title')
+
+@for($i = 1; $i <= 8; $i++)
+    @if($generation == $i)
+        Generation {{$generation}} Dex
+    @endif
+@endfor
+@endsection
 
 @section('content')
     <h1>Pokédex for generation {{$generation}}</h1>
-
+    
     @foreach ($pokemons as $pokemon)
-        <a href="pokemon?no={{$pokemon->id}}">{{$pokemon->name}}</a><br>
+        <a href="pokemon?no={{$pokemon->id}}" class="btn btn-success m-2" style="background-color: #254839; border-color: purple;">{{$pokemon->name}}</a><br>
     @endforeach
 
 @endsection

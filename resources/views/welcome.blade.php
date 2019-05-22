@@ -4,6 +4,6 @@
 
 @section('content')
 
-<h1 style="font-family: oswald;">NEWS</h1>
+<h1 style="font-family: oswald;">This is the current News</h1>
 
 @endsection
